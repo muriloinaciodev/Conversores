@@ -48,9 +48,13 @@ input {
     min-width: none;
     margin-bottom: 5px;
     text-align: right;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
 }
 
 select {
     width: 17%;
-    min-width: none;
 }

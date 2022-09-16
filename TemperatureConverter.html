@@ -9,18 +9,23 @@
 <body onload="getElements()">
     <main>
         <h1>Conversor de <br>Temperatura</h1>
-            <input type="number" id="inputIn">
-            <select id="selectIn" onchange="changeSelect(1)">
-                <option value="1">°C</option>
-                <option value="2">°F</option>
-                <option value="3">K</option>
-            </select>
-            <input type="number" id="inputOut">
-            <select id="selectOut" onchange="changeSelect(2)">
-                <option value="1">°F</option>
-                <option value="2">K</option>
-            </select>
+
+        <input type="number" id="inputIn" onkeyup="changeInput('IN')">
+        <select id="selectIn" onchange="changeSelect('IN')">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+            <option value="K">K</option>
+        </select>
+
+        <input type="number" id="inputOut" onkeyup="changeInput('OUT')">
+        <select id="selectOut" onchange="changeSelect('OUT')">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+            <option value="K">K</option>
+        </select>
+        <p></p>
     </main>
-    <script src="scripts/scriptTemperatureConverter.js">console.log('cu')</script>
+
+    <script src="scripts/scriptTemperatureConverter.js"></script>
 </body>
 </html>
