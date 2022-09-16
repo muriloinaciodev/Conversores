@@ -20,7 +20,7 @@ body {
 
 main {
     position: relative;
-    top: 100px;
+    top: 10vh;
     background-color: var(--cor2);
     width: 70vw;
     min-width: 280px;
@@ -47,6 +47,7 @@ input {
     width: 80%;
     min-width: none;
     margin-bottom: 5px;
+    text-align: right;
 }
 
 select {
