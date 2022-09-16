@@ -20,7 +20,7 @@ function changeSelect(select){
                     if (selectOut.value == "K") {selectOut.value = "C"}
                     break
             }
-            changeInput("OUT")
+            changeInput("IN")
             break
         case 'OUT':
             switch (selectOut.value) {
