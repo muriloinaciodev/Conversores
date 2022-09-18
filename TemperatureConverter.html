@@ -10,22 +10,30 @@
     <main>
         <h1>Conversor de <br>Temperatura</h1>
 
-        <input type="number" id="inputIn" onkeyup="changeInput('IN')">
-        <select id="selectIn" onchange="changeSelect('IN')">
-            <option value="C">°C</option>
-            <option value="F">°F</option>
-            <option value="K">K</option>
-        </select>
-
-        <input type="number" id="inputOut" onkeyup="changeInput('OUT')">
-        <select id="selectOut" onchange="changeSelect('OUT')">
-            <option value="C">°C</option>
-            <option value="F">°F</option>
-            <option value="K">K</option>
-        </select>
-        <p></p>
+        <div class="sides">
+            <input type="number" id="inputIn" onkeyup="changeInput('IN')"><br>
+            <select id="selectIn" onchange="changeSelect('IN')">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                <option value="K">K</option>
+            </select>
+        </div>
+        <div id="equal">=</div>
+        <div class="sides">
+            <input type="number" id="inputOut" onkeyup="changeInput('OUT')"><br>
+            <select id="selectOut" onchange="changeSelect('OUT')">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                <option value="K">K</option>
+            </select>
+        </div>
     </main>
-
+    <div id="button">
+        <a href="https://instagram.com/murilo_inacio_b">
+            <img src="insta.png" alt="instagram">
+            <span>@murilo_inacio_b</span>
+        </a>
+    </div>
     <script src="scripts/scriptTemperatureConverter.js"></script>
 </body>
 </html>

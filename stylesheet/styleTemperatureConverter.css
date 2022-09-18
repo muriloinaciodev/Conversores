@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
 :root {
     --cor1: #131F26;
     --cor2: #2A5159;
@@ -14,6 +15,7 @@
 }
 
 body {
+    height: 100vh;
     font-size: var(--size-default);
     background-color: var(--cor1);
 }
@@ -24,7 +26,7 @@ main {
     background-color: var(--cor2);
     width: 70vw;
     min-width: 280px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -44,11 +46,11 @@ input, select, p {
 }
 
 input {
-    width: 80%;
+    width: 100%;
     min-width: none;
-    margin-bottom: 5px;
-    text-align: right;
+    text-align: center;
     appearance: none;
+    margin-bottom: 5px;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -56,5 +58,51 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 select {
-    width: 17%;
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+}
+
+div.sides {
+    display: inline-block;
+    width: 43%;
+}
+
+div#equal {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: var(--size-default);
+    width: 10%;
+    text-align: center;
+    color: white;
+}
+
+a {
+    display: block;
+    position: relative;
+    top: 50vh;
+    
+    background-image: linear-gradient(to right, #9138B2, #E13766, #FED47B);
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    width: 240px;
+    
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+}
+
+a > img {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    transform: translate(0px, 4px);
+}
+
+a > span {
+    position: relative;
+    top: -8px;
 }
